@@ -11,7 +11,7 @@ Each part has been placed into the corresponding folder. There you can find .ipy
 
 **Steps to run the code:**
 
-1. All code was tested on Python 3.10. Please be sure that you have installed all the recommended packages from ```requirements.txt``` file by using command:
+1. All code was tested on Python 3.10.12. We recommend also use Anaconda (code was tested using version 23.3.1). Please be sure that you have installed all the recommended packages from ```requirements.txt``` file by using command:
 
 ```
 pip install -r requirements.txt
