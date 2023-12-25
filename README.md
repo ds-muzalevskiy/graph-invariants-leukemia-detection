@@ -2,12 +2,12 @@
 
 This repo contains of 4 parts that represent every part of the modelling process:
 
-* data_augmentation
-* invariants_generation
-* feature_analysis
-* model_training_evaluation
+* **data_augmentation**
+* **invariants_generation**
+* **feature_analysis**
+* **model_training_evaluation**
 
-Each part has been placed into the corresponding folder. There you can find .ipynb notebook that contains all the details. 
+Each part has been placed into the corresponding folder. There you can find .ipynb notebooks that contains all the details. 
 
 **Steps to run the code:**
 
