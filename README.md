@@ -1,5 +1,5 @@
-### Image Classification of Leukemic Cells Using Invariants of Triangle-Free Graphs as Synthetic Features
-#### Dmitry Muzalevskiy and Ivan Torshin.
+## Image Classification of Leukemic Cells Using Invariants of Triangle-Free Graphs as Synthetic Features
+### Dmitry Muzalevskiy and Ivan Torshin.
 
 This repo contains of 4 parts that represent every part of the modelling process:
 
