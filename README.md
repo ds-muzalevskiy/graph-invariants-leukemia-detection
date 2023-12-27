@@ -18,10 +18,11 @@ Each part has been placed into the corresponding folder. There you can find .ipy
 pip install -r requirements.txt
 ```
 
-2. **data_augmentation**: To create your own augmented dataset you need to use base dataset as input. In the paper, we have used ALL_IDB1 dataset (https://scotti.di.unimi.it/all/). Before running this part - download the ALL_IDB1 dataset (108 images) and put into the ```init_cells``` folder. Then after running the command all the augmented images will appear in the ```cells``` folder (3231 images):
+2. **data_augmentation**: To create your own augmented dataset you need to use base dataset as input. In the paper, we have used ALL_IDB1 dataset (https://scotti.di.unimi.it/all/). Before running this part - download the ALL_IDB1 dataset (108 images) and put into the ```init_cells``` folder. Then after running the command all the augmented images will appear in the ```cells``` folder (3231 images).  
 ```
 python augmentation.py
 ```
+**Important**: please be sure that before running ```augmentation.py``` all you initial input images do not contain ```Im00``` or ```Im0``` parts in their names. The filesnames should look like ```1_1```, ```2_1```, ... , ```107_0```, ```108_0```.
 
 3. **invariants_generation**: Some invariants from the list require quite complex computations (for example, global efficiency) and therefore one need to wait for several hours until full completion of invariants generation according to the script. 
 
