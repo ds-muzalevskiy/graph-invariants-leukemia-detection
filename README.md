@@ -24,7 +24,7 @@ python augmentation.py
 ```
 **Important**: please be sure that before running ```augmentation.py``` all you initial input images do not contain ```Im00``` or ```Im0``` parts in their names. The filesnames should look like ```1_1```, ```2_1```, ... , ```107_0```, ```108_0```.
 
-3. **invariants_generation**: Some invariants from the list require quite complex computations (for example, global efficiency) and therefore one need to wait for several hours until full completion of invariants generation according to the script. 
+3. **invariants_generation**: If you did everything correctly on the previous step you should get the augmented images placed in ```cells``` folder. Their names should look like ```1_1_0_1048```, ```1_1_0_139```, ... , ```108_0_0_965```, ```108_0_0_972```. Some invariants from the list require quite complex computations (for example, global efficiency) and therefore one need to wait for several hours until full completion of invariants generation according to the script. 
 
 4. **feature_analysis**: For reproduction of this part one will need to generate all the features from the previous step. However, if you desire to directly train the model and don't spend much time on generating all features - there is a possibility to generate only the features described in paper.
 
