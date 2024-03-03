@@ -11,4 +11,4 @@ imutils==0.5.4
 mkl==2.4.0
 tensorflow-cpu==2.13.0
 shap==0.44.0
-networkx==3.2.0
+networkx==2.5.1
