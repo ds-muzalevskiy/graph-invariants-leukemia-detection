@@ -28,4 +28,10 @@ python augmentation.py
 
 4. **feature_analysis**: For reproduction of this part one will need to generate all the features from the previous step. However, if you desire to directly train the model and don't spend much time on generating all features - there is a possibility to generate only the features described in paper.
 
-5. **model_training_evaluation**: This step should be straight-forward as long as you have installed all the recommended packages and went through all the previous steps. Worth to mention that GPU is not needed for the code execution, everything was tested on CPU. 
+5. **model_training_evaluation**: This step should be straight-forward as long as you have installed all the recommended packages and went through all the previous steps. Worth to mention that GPU is not needed for the code execution, everything was tested on CPU.
+
+**Comments about model training**
+In principle, if you are planning to preprocess your incoming test images and augment them before actual prediction (there can be some cases of such preprocessing pipelines) - the results of the model holds even with smaller amount of augmented train data (we have received comparable results using ```2500``` images).
+If you are planning to use classical variation of the preprocessing pipeline with augmented train and raw test - please be sure that you will have bigger augmented train dataset. Comparable results were received with ```10000``` images in the training set. We also have tested the model using ```20000``` augmented images in training set and noticed more stable behaviour. So therefore if you have enough computational resources for generating bigger augmented train set (```20000``` images or more) and calculate invariants on it - we definitely can recommend to do so.
+We have also noticed that with increase of training set, other ensemble models start overperform **XGBoost** in our tests. So therefore we can recommend using either **LightGBM** or **NGBoost** when scaling and dealing with bigger datasets.
+
